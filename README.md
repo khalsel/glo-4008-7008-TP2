@@ -89,15 +89,6 @@ Ensuite, le plateforme est accessible par http://localhost:3000
 
 1. Suivre les étapes du laboratoire de Mono2micro pour générer la décomposition. Utiliser les applications de ce TP ainsi que leur code source. (Attention: l'application Petclinic du labo est différente de celle du TP) 
 2. Afin de faciliter la construction des application monolithique aprés la modification avec BlueJay, on fournit un fichier de type Dockerfile pour chacune des applications. Plus de détails sont fournie dans la section de chaque application.
-3. Générer les traces d'exécution. (Attention: pour petclinic, les traces se trouvent dans )
-    - copier le fichier Dockerfile vers le dossier de la version modifiée de l'approche: 
-    ```bash
-    cp ./scripts/Dockerfile_plants $PATH_TO_PLANTS_SRC_CODE/Dockerfile
-    cd $PATH_TO_PLANTS_SRC_CODE
-    docker build --tag my_plants_app_image .
-    docker run 
-    ```
-
 3. Utiliser Mono2micro afin de générer tous les résultats dans le dossier "mono2micro/mono2micro-output". Pour manipuler les hyper-paramètres de Mono2micro, il faut modifier le fichier "config.ini" dans le dossier "mono2micro_input". Ce fichier est généré automatiquement après la première utilisation de Mono2micro.
 4. Trouver le fichier "final_graph.json" dans ce dossier.
 5. Transformer ce fichier vers le format de décomposition specifié dans le TP:
